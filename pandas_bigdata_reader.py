@@ -84,7 +84,7 @@ def read_chunk(file, n_rows, skip_rows, columns, pd_read_csv_params):
 def pd_multi_read_csv(file, processes=None, chunk_size=None, **pd_read_csv_params):
     """
     主函数,多进程读取大数据
-    read file by multiprocessing
+    read big data by multiprocessing
     Notice that,if you used param 'nrows',it will be defaulting to pandas implementation.
     Of course you can set param 'processes' and 'chunk_size' replace 'nrows',nrows=processes*chunk_size
     :param file: file path
